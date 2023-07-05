@@ -1,0 +1,297 @@
+.boss_gallery {
+    display: flex;
+    overflow: scroll;
+
+    scroll-snap-type: x mandatory;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+
+}
+
+.boss_gallery_item {
+
+    width: 32vh;
+    /* border: #000000 1px solid; */
+    flex-shrink: 0;
+    scroll-snap-align: center;
+
+
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.boss_container {
+    Transform: translate(-50%, 0);
+    left: 50%;
+
+    position: relative;
+
+    height: 50vh;
+    aspect-ratio: 27.5 / 50;
+
+    border-radius: 1vh;
+
+    /*  filter:brightness(.9); */
+    border: .2vh rgb(0, 0, 0) solid;
+}
+
+
+
+.boss_container a {
+    color: #000000;
+}
+
+.boss_container a:hover {
+    color: #000000;
+}
+
+.boss_press {
+    Transform: translate(-50%, 0);
+    left: 50%;
+
+    border: .2vh rgb(0, 0, 0) solid;
+
+    position: absolute;
+
+    border-radius: 1vh;
+    top: 35%;
+    height: 65%;
+    aspect-ratio: 29/32.5;
+
+    /* filter:brightness(1.1); */
+}
+
+.boss_item {
+
+    position: absolute;
+    Transform: translate(-50%, 0);
+    left: 50%;
+
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 1vh;
+    top: 61%;
+    height: 36%;
+    aspect-ratio: 52 / 36;
+}
+.boss_item iframe
+{
+    border-radius: 1vh;
+}
+
+.boss_item video {
+    width: 100%;
+    height: 100%;
+}
+
+.boss_jacks {
+    Transform: translate(-50%, 0);
+    left: 50%;
+
+    position: absolute;
+    top: 38%;
+
+    background-color: rgb(117, 117, 117);
+    height: 10%;
+    width: 110%;
+
+    border-radius: 1vh;
+    border: .2vh rgb(0, 0, 0) solid;
+}
+
+.boss_led {
+    Transform: translate(-50%, -50%);
+    left: 50%;
+    border: .2vh rgb(0, 0, 0) solid;
+    top: 4%;
+    position: absolute;
+    background-color: #ff4747;
+    /* background-color: #ffb8b8; */
+    /* box-shadow: 0px 0px .5vh .5vh #ff5d5d; */
+    border-radius: 50%;
+    width: 4%;
+    aspect-ratio: 1/1;
+}
+
+/* .boss_led:hover {
+    background-color: #ff0000;
+} */
+
+.boss_knobs {
+    height: 35%;
+    aspect-ratio: 27.5/17.5;
+
+    position: relative;
+}
+
+.boss_knob.knob {
+    height: 50%;
+    aspect-ratio: 1/1;
+    top: 10%;
+    position: absolute;
+}
+
+.boss_knob.knob.left {
+    left: 10%;
+}
+
+.boss_knob.knob.right {
+    right: 10%;
+}
+
+.boss_knob.text {
+    top:70%;
+    text-align: center;
+    font-size: 2vh;
+    height: 50%;
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+.boss_knob.text.left {
+    left: 10%;
+}
+.boss_knob.text.right {
+    right: 10%;
+}
+
+.boss_knob.text.right {}
+
+
+
+.boss_knob.knob img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.boss_knob.knob img {
+    transition: transform 800ms;
+}
+
+.boss_knob.knob img:hover {
+    transform: rotate(300deg);
+}
+
+
+/* .boss_knobs {
+    height: 35%;
+    aspect-ratio: 27.5/17.5;
+
+    border: rgb(255, 0, 0) 1px solid;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    justify-items: center; 
+}
+
+.boss_knob {
+   height: 100%;
+}
+
+.boss_knob.knob {
+    margin-top: 2vh;
+    border: black 1px solid;
+}
+
+.boss_knob.text {
+    font-size: 2vh;
+}
+
+
+
+.boss_knob img {
+
+    display: flex;
+    align-items: center; 
+    height: calc(((50vh - 32.5vh)/4) * 2);
+    width: auto;
+}
+
+.boss_knob img {
+    transition: transform 800ms;
+}
+
+.boss_knob img:hover {
+    transform: rotate(300deg);
+} */
+
+.boss_name {
+    position: absolute;
+    top: 17.5vh;
+    height: 15vh;
+    width: 29vh;
+    left: calc(1.5vh / -2);
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "boss_output . boss_input"
+        "boss_song boss_song boss_song"
+        "boss_artist boss_artist boss_artist";
+
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.boss_input {
+
+    grid-area: boss_input;
+    position: absolute;
+    top: 1vh;
+    height: 3vh;
+    right: 1vh;
+    /* outline: black 1px solid; */
+    text-align: right;
+}
+
+.boss_output {
+    grid-area: boss_output;
+    left: 1vh;
+    position: absolute;
+    top: 1vh;
+    height: 3vh;
+    /* outline: black 1px solid; */
+    text-align: left;
+}
+
+@font-face {
+    font-family: BossFont;
+    src: url(../resources/fonts/BOSS/Boss.otf);
+}
+
+
+.boss_song {
+    grid-area: boss_song;
+    /*  border: black 1px solid; */
+    text-align: left;
+    font-size: 4vh;
+    line-height: 3vh;
+    position: absolute;
+    top: -1vh;
+    left: 2vh;
+    font-family: BossFont;
+}
+
+.boss_artist {
+    grid-area: boss_artist;
+    /*  border: black 1px solid; */
+    position: absolute;
+    text-align: right;
+    right: 2vh;
+    font-family: BossFont;
+}
+
+/* .boss_shadow
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.059);
+    width: 100%;
+    height: 100%;
+    border-radius:1vh;
+} */

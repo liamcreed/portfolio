@@ -1,0 +1,162 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%
+}
+
+nav {
+    height: 100%;
+    
+    display: grid;
+    grid-template-rows: 25px 25px 70px 70px;
+
+    justify-content: center;
+    /* border: 1px red solid; */
+    padding-top: 5px; 
+    gap: 5px;
+        
+}
+nav
+    {
+        grid-template-columns: repeat(6, 15vw);
+    }
+@media (max-width: 768px) 
+{
+    nav
+    {
+        grid-template-columns: repeat(6, 15vw);
+    }
+}
+@media (min-width: 768px) 
+{
+    nav
+    {
+        
+        grid-template-columns: repeat(6, 120px);
+        
+    }
+}
+
+
+.nav_item {
+    /* outline: black 1px solid; */
+    z-index: 10;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.nav_item.menu{
+    align-items: center;
+}
+
+.nav_item.menu a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 253, 253);
+    transition-duration: 200ms;
+}
+
+.nav_item.menu :hover {
+    color:  rgb(255, 100, 20);
+}
+
+.nav_item.icon {
+    font-weight: 900;
+    align-items: center;
+    font-size: 28px;
+}
+.nav_item.icon img
+{
+    width: 22px;
+}
+
+.nav_item.knob {
+    z-index: 10;
+    padding: 5px;
+}
+
+.nav_item.knob img {
+    height: 60px;
+    width: auto;
+}
+
+.nav_item.knob.pot img{
+    transition: transform 800ms;
+}
+
+.nav_item.knob.pot img:hover {
+    transform: rotate(300deg);
+}
+
+.nav_item.knob.input img { 
+    transition: transform 800ms;
+}
+
+.nav_item.knob.input img:hover {
+    transform: scale(1.1);
+}
+
+.nav_item.knob.switch img {
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+.nav_item.knob.switch a img:hover {
+    opacity: 1;
+}
+
+.nav_item.knob.back {
+    position: relative;
+    top: -75px;
+    z-index: 8;
+}
+
+.black_top {
+    z-index: 7;
+
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0px;
+
+    height: 35px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+}
+
+
+.orange {
+    z-index: 7;
+
+    position: fixed;
+
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 35px;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(255, 100, 20);
+}
+
+.control_plate {
+    z-index: 7;
+    
+    position: fixed;
+
+    height: 70px;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+} 
