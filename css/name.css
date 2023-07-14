@@ -1,5 +1,5 @@
 
-#logo {
+.name_container {
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -25,20 +25,20 @@
 }
 
 @media (min-width: 1024px) {
-    #logo {
+    .name_container {
         font-size: 30vh;
     }
 }
 
 @media (max-width: 1024px) {
-    #logo {
+    .name_container {
         /* color: blue; */
         font-size: 26vh;
     }
 }
 
 @media (max-width: 768px) {
-    #logo {
+    .name_container {
         /* color: green; */
         font-size: 24vw;
     }

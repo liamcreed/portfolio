@@ -15,12 +15,6 @@ body {
     background-color: white;
 }
 
-@media (min-width: 768px) {
-    body {
-        font-size: 20px;
-    }
-}
-
 @font-face {
     font-family: OrangeAmp;
     src: url(../resources/fonts/Orange/AmpedOrange.ttf);
@@ -47,7 +41,7 @@ body {
 
 @media (min-width: 1024px) {
     .container {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -102,9 +96,10 @@ body {
     color: rgb(75, 111, 203);
 }
 
-#cv {}
+#cv,#references {
+    line-height: 1.5em;
+}
 
-#references {}
 
 #cv span,
 #references span {

@@ -15,7 +15,8 @@ nav {
 }
 
 .nav_group {
-    width: 20%;
+    outline: 1px green solid;
+    width: calc(100%/5);
     height: 100%;
     position: relative;
 }
@@ -24,7 +25,6 @@ nav {
     position: absolute;
     width: 100%;
     text-align: center;
-    
 }
 
 .nav_item.menu {
@@ -64,14 +64,12 @@ nav {
 
     top: calc(45% + 5%);
     height: 45%;
-
 }
 
 .nav_item.knob img {
     height: 100%;
     aspect-ratio: 1/1;
 }
-
 
 .nav_item.knob.pot img {
     transition: transform 800ms;
