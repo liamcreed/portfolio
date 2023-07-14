@@ -1,5 +1,5 @@
 
-.logo {
+#logo {
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -25,20 +25,20 @@
 }
 
 @media (min-width: 1024px) {
-    .logo {
+    #logo {
         font-size: 30vh;
     }
 }
 
 @media (max-width: 1024px) {
-    .logo {
+    #logo {
         /* color: blue; */
         font-size: 26vh;
     }
 }
 
 @media (max-width: 768px) {
-    .logo {
+    #logo {
         /* color: green; */
         font-size: 24vw;
     }

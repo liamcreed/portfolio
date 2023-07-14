@@ -58,6 +58,12 @@ nav
     color: rgb(255, 253, 253);
     transition-duration: 200ms;
 }
+@media (max-width: 480px) 
+{
+    .nav_item.menu a{
+        font-size: 16px;
+    }
+}
 
 .nav_item.menu :hover {
     color:  rgb(255, 100, 20);
@@ -77,10 +83,16 @@ nav
     z-index: 10;
     padding: 5px;
 }
-
 .nav_item.knob img {
     height: 60px;
     width: auto;
+}
+@media (max-width: 480px) 
+{
+    .nav_item.knob img {
+        height: 55px;
+        width: auto;
+    }
 }
 
 .nav_item.knob.pot img{

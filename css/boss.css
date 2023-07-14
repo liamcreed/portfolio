@@ -79,6 +79,7 @@
 .boss_item iframe
 {
     border-radius: 1vh;
+    opacity: 0;
 }
 
 .boss_item video {
