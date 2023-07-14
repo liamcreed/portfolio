@@ -32,9 +32,6 @@
     aspect-ratio: 27.5 / 50;
 
     border-radius: 1vh;
-
-    /*  filter:brightness(.9); */
-    border: .2vh rgb(0, 0, 0) solid;
 }
 
 
@@ -51,7 +48,9 @@
     Transform: translate(-50%, 0);
     left: 50%;
 
-    border: .2vh rgb(0, 0, 0) solid;
+    filter: brightness(1.1);
+
+    
 
     position: absolute;
 
@@ -99,13 +98,13 @@
     width: 110%;
 
     border-radius: 1vh;
-    border: .2vh rgb(0, 0, 0) solid;
+    
 }
 
 .boss_led {
     Transform: translate(-50%, -50%);
     left: 50%;
-    border: .2vh rgb(0, 0, 0) solid;
+    
     top: 4%;
     position: absolute;
     background-color: #ff4747;

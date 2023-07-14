@@ -12,8 +12,7 @@ body {
     font-weight: 400;
 
     color: rgb(0, 0, 0);
-
-    /*  background-color: white; */
+    background-color: white;
 }
 
 @media (min-width: 768px) {
@@ -30,7 +29,7 @@ body {
 
 .container {
     position: fixed;
-    top: 136px;
+    top: calc(130px + 1px);
 
     left: 0;
     right: 0;
@@ -38,15 +37,12 @@ body {
 
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5vh;
 
     overflow-y: scroll;
     scroll-behavior: smooth;
 
-    color: #000000;
-
     z-index: 0;
-
-    background-color: rgb(255, 255, 255)
 }
 
 @media (min-width: 1024px) {
@@ -68,59 +64,60 @@ body {
 }
 
 
-/* .container img
-{
-    loading: "lazy";
-} */
-
-.container a {
-    transition: all 200ms ease;
-    text-decoration: none;
-    /* color: rgb(75, 111, 203); */
-    color: rgb(255, 103, 21);
-}
-.container a:hover {
-    /* color: rgb(255, 103, 21); */
-    color: rgb(75, 111, 203); 
-}
-
-
 .container h2 {
     text-align: center;
     font-size: 36px;
-    
 }
+.container hr
+{
+    border: 1px rgb(255, 103, 21) solid;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
 @font-face {
     font-family: OrangeFont;
     src: url(../resources/fonts/Orange/AmpedOrange.ttf);
 }
 
 
-#cv {
-  
+#cv,
+#references,
+#art,
+#videos,
+#contact {
+    /* background-color: rgb(245, 245, 245); */
+    padding-top: 1px;
 }
 
-#cv span {
+#cv a,
+#references a {
+    transition: all 200ms ease;
+    text-decoration: none;
+    color: rgb(255, 103, 21);
+}
+
+#cv a:hover,
+#references a:hover {
+    color: rgb(75, 111, 203);
+}
+
+#cv {}
+
+#references {}
+
+#cv span,
+#references span {
     font-style: italic;
     font-weight: 200;
 }
 
-#references {
-    
-}
-
-#videos {
-    
-}
-
-#photos {
 
 
-}
 
-#art {
 
-}
+#videos {}
 
-/* * { outline: 1px solid black; }
- */
+#photos {}
+
+#art {}

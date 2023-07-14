@@ -4,8 +4,13 @@
 <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+
+
     <title>Liam Creed</title>
-    <!-- <link rel="icon" type="image/x-icon" href="resources/images/icons/sg-1.png"> -->
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,-25" />
@@ -21,43 +26,48 @@
 
 <body>
     <header>
+        <div class="nav_backdrop">
+            <div class="black_top"></div>
+            <div class="orange"></div>
+            <div class="black_border bottom"></div>
+            <div class="control_plate"></div>
+            <div class="black_border top"></div>
+        </div>
         <nav>
-            <div class="nav_item menu"><a href="#cv">CV</a></div>
-            <div class="nav_item menu"><a href="#references">Ref.</a></div>
-            <div class="nav_item menu"><a href="#videos">Video's</a></div>
-            <div class="nav_item menu"><a href="#photos">Foto's</a></div>
-            <div class="nav_item menu"><a href="#art">Kunst</a></div>
-            <div class="nav_item menu"><a href="#contact">Contact</a></div>
-
-            <div class="nav_item icon"><img src="resources/icons/amp/icons/description.svg"></div>
-            <div class="nav_item icon"><img src="resources/icons/amp/icons/group.svg"></div>
-            <div class="nav_item icon"><img src="resources/icons/amp/icons/video_camera_front.svg"></div>
-            <div class="nav_item icon"><img src="resources/icons/amp/icons/photo_library.svg"></div>
-            <div class="nav_item icon"><img src="resources/icons/amp/icons/palette.svg"></div>
-            <div class="nav_item icon"><img src="resources/icons/amp/icons/phone_in_talk.svg"></div>
-
-            <div class="nav_item knob input"><a href="#cv"><img src="resources/icons/amp/input.png"></a></div>
-            <div class="nav_item knob pot"><a href="#references"><img src="resources/icons/amp/knob.png"></a></div>
-            <div class="nav_item knob pot"><a href="#videos"><img src="resources/icons/amp/knob.png"></a></div>
-            <div class="nav_item knob pot"><a href="#music"><img src="resources/icons/amp/knob.png"></a></div>
-            <div class="nav_item knob pot"><a href="#art"><img src="resources/icons/amp/knob.png"></a></div>
-            <div class="nav_item knob switch"><a href="#contact"><img src="resources/icons/amp/light_overlay.png"></a>
+            <div class="nav_group">
+                <div class="nav_item menu"><a href="#cv">CV</a></div>
+                <div class="nav_item icon"><img src="resources/icons/amp/icons/description.svg"></div>
+                <div class="nav_item knob back"></div>
+                <div class="nav_item knob input"><a href="#cv"><img src="resources/icons/amp/input.png"></a></div>
             </div>
-
-            <div class="nav_item knob back"></div>
-            <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
-            <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
-            <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
-            <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
-            <div class="nav_item knob back"><img src="resources/icons/amp/light.png"></div>
-
+            <div class="nav_group">
+                <div class="nav_item menu"><a href="#references">Ref.</a></div>
+                <div class="nav_item icon"><img src="resources/icons/amp/icons/group.svg"></div>
+                <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
+                <div class="nav_item knob pot"><a href="#references"><img src="resources/icons/amp/knob.png"></a></div>
+            </div>
+            <div class="nav_group">
+                <div class="nav_item menu"><a href="#art">Kunst</a></div>
+                <div class="nav_item icon"><img src="resources/icons/amp/icons/palette.svg"></div>
+                <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
+                <div class="nav_item knob pot"><a href="#art"><img src="resources/icons/amp/knob.png"></a></div>
+            </div>
+            <div class="nav_group">
+                <div class="nav_item menu"><a href="#videos">Video</a></div>
+                <div class="nav_item icon"><img src="resources/icons/amp/icons/video_camera_front.svg"></div>
+                <div class="nav_item knob back"><img src="resources/icons/amp/knob_background.png"></div>
+                <div class="nav_item knob pot"><a href="#videos"><img src="resources/icons/amp/knob.png"></a></div>
+            </div>
+            <div class="nav_group">
+                <div class="nav_item menu"><a href="#contact">Contact</a></div>
+                <div class="nav_item icon"><img src="resources/icons/amp/icons/phone_in_talk.svg"></div>
+                <div class="nav_item knob back"><img src="resources/icons/amp/light.png"></div>
+                <div class="nav_item knob light"><a href="#contact"><img
+                            src="resources/icons/amp/light_overlay.png"></a>
+                </div>
+            </div>
         </nav>
-        <div class="black_top"></div>
-        <div class="orange"></div>
-        <div class="control_plate"></div>
     </header>
-    </div>
-
 
     <div class="container">
         <div id="logo">
@@ -115,6 +125,7 @@
                     </div>
                 </div>
             </div>
+
             <p>
                 Programma’s die ik kan gebruiken:<br>
                 <span>
@@ -123,12 +134,12 @@
                     Effects, Lightroom, Davinci Resolve, Final Cut Pro, programmeren in C, C++, HTML en CSS (deze
                     website)<br>
                 </span>
-                <br>
+            </p>
+            <p>
                 Instrumenten die ik kan bespelen:<br>
                 <span>Gitaar, Drums, Basgitaar en Piano</span><br>
-                <br>
-
-
+            </p>
+            <p>
                 Gitaren die ik heb gebouwd met DIY paketten:<br>
                 <span>
                     2014 Groene Les Paul<br>
@@ -139,6 +150,10 @@
                     2022 Zelfgemaakte Ts808<br>
                 </span>
             </p>
+
+
+
+
             <div class="guitar_gallery">
                 <img class="guitar_gallery_item" src="resources/portfolio/guitars/strat.png">
                 <img class="guitar_gallery_item" src="resources/portfolio/guitars/tele.png">
@@ -146,153 +161,171 @@
                 <img class="guitar_gallery_item" src="resources/portfolio/guitars/lespaul.png">
                 <img class="guitar_gallery_item" src="resources/portfolio/guitars/ts808.jpg">
                 <img class="guitar_gallery_item" src="resources/portfolio/guitars/ts808_open.jpg">
-
             </div>
 
-            <div id="references">
-                <p>
-                    2014-heden Gitaar via Youtube o.a. <a href="https://www.youtube.com/@MartyMusic"
-                        target="_blank">Marty Schwartz</a> en <a href="https://www.youtube.com/@justinguitar"
-                        target="_blank">Justin Guitar</a> <br>
-                </p>
-                <p>
-                    2016-heden Gitaardocent <a href="https://www.instagram.com/timwilliammusic/?hl=en"
-                        target="_blank">Tim
-                        William van
-                        Ouwerkerk</a> , gitarist o.a. <a href="http://rilanandthebombardiers.nl" target="_blank">Rilan &
-                        the
-                        Bombardiers</a> / <a href="https://www.robdekay.nl" target="_blank">Rob Dekay</a>.<br>
-                    <span>
-                        “Ik zou Liam willen omschrijven als een muzikale en tevens intelligente jongen, die een
-                        creatieve
-                        manier
-                        heeft van denken heeft met een sterke eigen mening en op deze manier ook problemen aanpakt.
-                        Verder
-                        is
-                        z’n
-                        interesse breed waardoor
-                        hij naast muziek ook excelleert in tekenen/schilderen, maken van filmpjes, games ontwikkelen.
-                        Zodra
-                        hij
-                        dus
-                        iets leuk vindt, duikt hij er volledig in.”
-                    </span>
-                </p>
-                <p>
-                    2015-heden Muziekdocent <a href="https://svenkeet.nl/" target="_blank">Sven Keet</a>, dirigent,
-                    arrangeur, zanger en
-                    beatboxer. <br>
-                    <span>
-                        “Liam is enorm muzikaal en
-                        getalenteerd en heeft een grote drive om zoveel mogelijk muziek te maken. Als multi
-                        instrumentalist
-                        beheerst
-                        hij gitaar, drums, piano, beatbox en muziektheorie op hoog niveau. Ik ben heel benieuwd naar wat
-                        Liam’s
-                        muzikale loopbaan hem nog gaat brengen!”
-                    </span>
-                </p>
-                <p>
-                    2013-heden Muziekdocent Lisa Voet, zangeres.<br>
-                    <span>
-                        “Liam is vindingrijk, creatief en schroomt niet om zichzelf nieuwe vaardigheden aan te leren, zo
-                        ook
-                        op
-                        het
-                        gebied van muziek.”
-                    </span>
-                </p>
-                <p>
-                    2018-heden Drumdocent <a href="https://www.gustanasselbergs.com/" target="_blank">Gustan
-                        Asselbergs</a>,
-                    drummer en
-                    schrijver.<br>
-                    <span>
-                        “Ik heb Liam leren kennen als een enthousiaste en serieuze muzikant. Toen hij 3,5 jaar geleden
-                        bij
-                        mij
-                        op
-                        les kwam, viel mij meteen op hoe leergierig hij is. Van nature verdiept hij zich in
-                        verschillende
-                        onderwerpen, wat een mooie kwaliteit is. Dit maakt van hem een muzikant met een brede horizon.
-                        Alles
-                        wat
-                        in
-                        de drumles aan bod komt, kan hij zich gemakkelijk eigen maken.
-                        Het is dan ook een plezier met hem te werken. Ingetogen, gevat, creatief,
-                        goede oren en zeer intelligent.”
-                    </span>
-                </p>
-                <p>
-                    2021-heden Muziekdocent <a href="https://danielroser.com" target="_blank">Daniel Roser</a>, jazz
-                    pianist.<br>
-                    <span>
-                        “Liam is een briljante leerling van mij met wie ik muzikale structuren en vaardigheden train. Ik
-                        speel
-                        piano
-                        en hij gitaar. Ik zoek voor hem elke les naar een muzikale uitdaging, die net achter zijn
-                        kennishorizon
-                        ligt. Altijd weet hij die nieuwe concepten of technieken op een kalme maar alerte wijze snel te
-                        absorberen
-                        en incorporeren. Hij is in veel opzichten een volwassen muzikant; goede timing, “snelle” oren en
-                        een
-                        brede
-                        interesse voor veel stijlen.”
-                    </span>
-                </p>
-                <p>
-                    2016-heden Tekenleraar <a href="https://striptekenenmetpijke.weebly.com" target="_blank">Pijke
-                        Ileri</a>, <a href="https://www.dekleineacademie.com/pijke" target="_blank">De Kleine
-                        Academie.</a><br>
-                    <span>
-                        “Liam is een nieuwsgierige jongen met een brede interesse. Daarnaast is hij altijd kritisch op
-                        zichzelf.
-                        Deze eigenschappen zijn terug te zien in zowel zijn muziek als zijn beeldend werk. Dingen die de
-                        moeite
-                        waard zijn om te doen, zijn de moeite waard om goed te doen. Zijn werk is origineel en
-                        overtuigend.”
-                    </span>
-                </p>
 
-                <p>
-                    Week 41, 2022 Stage <a href="https://public.audio" target="_blank">PublicAudio</a>, Stagebegeleider
-                    Laurens Lammers,
-                    Sound Designer.<br>
-                    <span>
-                        “Liam is intelligent, behulpzaam en muzikaal. Daarnaast ook nog eens technologisch vaardig, niet
-                        schuw
-                        om
-                        nieuwe uitdagingen
-                        aan te pakken en om te laten zien wat hij kan.”
-                    </span>
-                </p>
+        </div>
 
-                <p>
-                    Week 41, 2022 Stage <a href="https://public.audio" target="_blank">PublicAudio</a>, Rens Pluijm,
-                    Senior
-                    Sound
-                    Designer.<br>
-                    <span>
-                        “Liam sloot als stagiair naadloos aan bij ons team. Hij heeft in een
-                        week tijd ongelofelijk veel creatieve potentie laten zien maar ook werklust en inzet getoond
-                        voor de
-                        wat
-                        minder interessante klusjes binnen ons bedrijf. Liam is ontzettend leergierig en pakt dingen
-                        razendsnel
-                        op,
-                        aan het eind van de week waren we eigenlijk al vergeten dat Liam nog op het VWO zat.
-                        Liam Creed, onthoud die naam....
-                    </span>
-                </p>
-                <p>
-                    Naast alle begeleiding die ik krijg van docenten, begeleid ik mijn broer Jimmy Creed (16 jaar,
-                    Downsyndroom) met het leren van drums en bongo’s.
-                </p>
+        <div id="references">
+            <p>
+                2014-heden Gitaar via Youtube o.a. <a href="https://www.youtube.com/@MartyMusic" target="_blank">Marty
+                    Schwartz</a> en <a href="https://www.youtube.com/@justinguitar" target="_blank">Justin Guitar</a>
+                <br>
+            </p>
+            <p>
+                2016-heden Gitaardocent <a href="https://www.instagram.com/timwilliammusic/?hl=en" target="_blank">Tim
+                    William van
+                    Ouwerkerk</a> , gitarist o.a. <a href="http://rilanandthebombardiers.nl" target="_blank">Rilan &
+                    the
+                    Bombardiers</a> / <a href="https://www.robdekay.nl" target="_blank">Rob Dekay</a>.<br>
+                <span>
+                    “Ik zou Liam willen omschrijven als een muzikale en tevens intelligente jongen, die een
+                    creatieve
+                    manier
+                    heeft van denken heeft met een sterke eigen mening en op deze manier ook problemen aanpakt.
+                    Verder
+                    is
+                    z’n
+                    interesse breed waardoor
+                    hij naast muziek ook excelleert in tekenen/schilderen, maken van filmpjes, games ontwikkelen.
+                    Zodra
+                    hij
+                    dus
+                    iets leuk vindt, duikt hij er volledig in.”
+                </span>
+            </p>
+            <p>
+                2015-heden Muziekdocent <a href="https://svenkeet.nl/" target="_blank">Sven Keet</a>, dirigent,
+                arrangeur, zanger en
+                beatboxer. <br>
+                <span>
+                    “Liam is enorm muzikaal en
+                    getalenteerd en heeft een grote drive om zoveel mogelijk muziek te maken. Als multi
+                    instrumentalist
+                    beheerst
+                    hij gitaar, drums, piano, beatbox en muziektheorie op hoog niveau. Ik ben heel benieuwd naar wat
+                    Liam’s
+                    muzikale loopbaan hem nog gaat brengen!”
+                </span>
+            </p>
+            <p>
+                2013-heden Muziekdocent Lisa Voet, zangeres.<br>
+                <span>
+                    “Liam is vindingrijk, creatief en schroomt niet om zichzelf nieuwe vaardigheden aan te leren, zo
+                    ook
+                    op
+                    het
+                    gebied van muziek.”
+                </span>
+            </p>
+            <p>
+                2018-heden Drumdocent <a href="https://www.gustanasselbergs.com/" target="_blank">Gustan
+                    Asselbergs</a>,
+                drummer en
+                schrijver.<br>
+                <span>
+                    “Ik heb Liam leren kennen als een enthousiaste en serieuze muzikant. Toen hij 3,5 jaar geleden
+                    bij
+                    mij
+                    op
+                    les kwam, viel mij meteen op hoe leergierig hij is. Van nature verdiept hij zich in
+                    verschillende
+                    onderwerpen, wat een mooie kwaliteit is. Dit maakt van hem een muzikant met een brede horizon.
+                    Alles
+                    wat
+                    in
+                    de drumles aan bod komt, kan hij zich gemakkelijk eigen maken.
+                    Het is dan ook een plezier met hem te werken. Ingetogen, gevat, creatief,
+                    goede oren en zeer intelligent.”
+                </span>
+            </p>
+            <p>
+                2021-heden Muziekdocent <a href="https://danielroser.com" target="_blank">Daniel Roser</a>, jazz
+                pianist.<br>
+                <span>
+                    “Liam is een briljante leerling van mij met wie ik muzikale structuren en vaardigheden train. Ik
+                    speel
+                    piano
+                    en hij gitaar. Ik zoek voor hem elke les naar een muzikale uitdaging, die net achter zijn
+                    kennishorizon
+                    ligt. Altijd weet hij die nieuwe concepten of technieken op een kalme maar alerte wijze snel te
+                    absorberen
+                    en incorporeren. Hij is in veel opzichten een volwassen muzikant; goede timing, “snelle” oren en
+                    een
+                    brede
+                    interesse voor veel stijlen.”
+                </span>
+            </p>
+            <p>
+                2016-heden Tekenleraar <a href="https://striptekenenmetpijke.weebly.com" target="_blank">Pijke
+                    Ileri</a>, <a href="https://www.dekleineacademie.com/pijke" target="_blank">De Kleine
+                    Academie.</a><br>
+                <span>
+                    “Liam is een nieuwsgierige jongen met een brede interesse. Daarnaast is hij altijd kritisch op
+                    zichzelf.
+                    Deze eigenschappen zijn terug te zien in zowel zijn muziek als zijn beeldend werk. Dingen die de
+                    moeite
+                    waard zijn om te doen, zijn de moeite waard om goed te doen. Zijn werk is origineel en
+                    overtuigend.”
+                </span>
+            </p>
+
+            <p>
+                Week 41, 2022 Stage <a href="https://public.audio" target="_blank">PublicAudio</a>, Stagebegeleider
+                Laurens Lammers,
+                Sound Designer.<br>
+                <span>
+                    “Liam is intelligent, behulpzaam en muzikaal. Daarnaast ook nog eens technologisch vaardig, niet
+                    schuw
+                    om
+                    nieuwe uitdagingen
+                    aan te pakken en om te laten zien wat hij kan.”
+                </span>
+            </p>
+
+            <p>
+                Week 41, 2022 Stage <a href="https://public.audio" target="_blank">PublicAudio</a>, Rens Pluijm,
+                Senior
+                Sound
+                Designer.<br>
+                <span>
+                    “Liam sloot als stagiair naadloos aan bij ons team. Hij heeft in een
+                    week tijd ongelofelijk veel creatieve potentie laten zien maar ook werklust en inzet getoond
+                    voor de
+                    wat
+                    minder interessante klusjes binnen ons bedrijf. Liam is ontzettend leergierig en pakt dingen
+                    razendsnel
+                    op,
+                    aan het eind van de week waren we eigenlijk al vergeten dat Liam nog op het VWO zat.
+                    Liam Creed, onthoud die naam....
+                </span>
+            </p>
+            <p>
+                Naast alle begeleiding die ik krijg van docenten, begeleid ik mijn broer Jimmy Creed (16 jaar,
+                Downsyndroom) met het leren van drums en bongo’s.
+            </p>
+        </div>
+
+        <div id="art">
+            <h2>Kunst</h2>
+            <div class="art_gallery">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/red_panda.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/flamingo.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/walrus.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/alpaca.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/goose.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/monkey.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/b_aragorn.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/b_minasmorgul.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/ant.jpg">
+
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/capybara.jpg">
+                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/ferret.jpg">
             </div>
         </div>
 
-       <!--  <div id="videos">
-            <h2>Video's</h2>
+        <div id="videos">
+            <h2>Video's (coming soon)</h2>
             <div class="boss_gallery">
                 <div class="boss_gallery_item">
                     <div class="boss_container" style="background-color: rgb(120, 230, 255); color: rgb(0, 0, 0);">
@@ -459,28 +492,8 @@
                 </div>
             </div>
         </div>
- -->
-        <div id="photos">
 
-        </div>
-
-        <div id="art">
-            <h2>Kunst</h2>
-            <div class="art_gallery">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/red_panda.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/flamingo.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/walrus.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/alpaca.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/goose.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/monkey.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/b_aragorn.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/b_minasmorgul.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/ant.jpg">
-
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/capybara.jpg">
-                <img class="art_gallery_item" src="resources/portfolio/art/watercolor/ferret.jpg">
-            </div>
-        </div>
+        <hr>
 
         <div id="contact">
             <div class="socials">
@@ -504,14 +517,20 @@
                         </div>
                     </a>
                 </div>
+                <div class="plectrum_container">
+                    <a href="https://github.com/liamcreed" target="_blank">
+                        <div class="plectrum">
+                            <img src="resources/icons/socials/plectrum.svg">
+                        </div>
+                        <div class="plectrum_social">
+                            <img src="resources/icons/socials/github.svg">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <br>
-
-            Haarlem, Nederland
-            <br>
-
         </div>
     </div>
+
     <script src="scripts/script.js"></script>
     <script src="scripts/email.js"></script>
 
