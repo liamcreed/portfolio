@@ -15,7 +15,6 @@ nav {
 }
 
 .nav_group {
-    outline: 1px green solid;
     width: calc(100%/5);
     height: 100%;
     position: relative;

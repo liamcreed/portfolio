@@ -175,48 +175,7 @@
 }
 
 
-/* .boss_knobs {
-    height: 35%;
-    aspect-ratio: 27.5/17.5;
 
-    border: rgb(255, 0, 0) 1px solid;
-  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    justify-items: center; 
-}
-
-.boss_knob {
-   height: 100%;
-}
-
-.boss_knob.knob {
-    margin-top: 2vh;
-    border: black 1px solid;
-}
-
-.boss_knob.text {
-    font-size: 2vh;
-}
-
-
-
-.boss_knob img {
-
-    display: flex;
-    align-items: center; 
-    height: calc(((50vh - 32.5vh)/4) * 2);
-    width: auto;
-}
-
-.boss_knob img {
-    transition: transform 800ms;
-}
-
-.boss_knob img:hover {
-    transform: rotate(300deg);
-} */
 
 .boss_name {
     position: absolute;
