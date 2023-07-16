@@ -1,46 +1,49 @@
-.boss_gallery {
+.video_gallery {
     display: flex;
     overflow: scroll;
 
     scroll-snap-type: x mandatory;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-
-
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
-.boss_gallery_item {
+.boss_pedal {
 
-    width: 32vh;
-    /* border: #000000 1px solid; */
+    position: relative;
+
+    font-size: 1.8vh;
+    height: 45vh;
+    width: auto;
+
+    aspect-ratio: 32 / 50;
+
     flex-shrink: 0;
     scroll-snap-align: center;
 
-
-
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-left: 0;
 }
 
-.boss_container {
+.boss_enclosure {
     Transform: translate(-50%, 0);
     left: 50%;
 
     position: relative;
 
-    height: 50vh;
+    height: 100%;
     aspect-ratio: 27.5 / 50;
 
-    border-radius: 1vh;
+    /* background-color: rgb(120, 230, 255);  */
+    color: rgb(0, 0, 0);
+
+    border-radius: .5em;
 }
 
-
-
-.boss_container a {
+.boss_enclosure a {
     color: #000000;
+    text-decoration: none;
 }
 
-.boss_container a:hover {
+.boss_enclosure a:hover {
     color: #000000;
 }
 
@@ -48,81 +51,70 @@
     Transform: translate(-50%, 0);
     left: 50%;
 
-    filter: brightness(1.1);
-
-    
-
     position: absolute;
-
-    border-radius: 1vh;
     top: 35%;
     height: 65%;
     aspect-ratio: 29/32.5;
+    color: rgb(0, 0, 0);
 
-    /* filter:brightness(1.1); */
+    border-radius: .5em;
 }
 
 .boss_item {
-
     position: absolute;
     Transform: translate(-50%, 0);
     left: 50%;
 
-
     background-color: rgb(0, 0, 0);
-    border-radius: 1vh;
-    top: 61%;
-    height: 36%;
+    top: 40%;
+    height: 55%;
     aspect-ratio: 52 / 36;
+
+    border-radius: .5em;
 }
-.boss_item iframe
-{
-    border-radius: 1vh;
-    opacity: 0;
-}
+
 
 .boss_item video {
     width: 100%;
     height: 100%;
+    border-radius: .5em;
 }
 
-.boss_jacks {
-    Transform: translate(-50%, 0);
-    left: 50%;
-
+.boss_jack {
     position: absolute;
     top: 38%;
 
-    background-color: rgb(117, 117, 117);
-    height: 10%;
-    width: 110%;
+    background-color: rgb(157, 157, 157);
+    height: 9%;
+    aspect-ratio: 1/1;
 
-    border-radius: 1vh;
-    
+    border-radius: 10%;
+}
+
+.boss_jack.left {
+    left: 3%;
+}
+
+.boss_jack.right {
+    right: 3%;
 }
 
 .boss_led {
     Transform: translate(-50%, -50%);
     left: 50%;
-    
+
     top: 4%;
     position: absolute;
     background-color: #ff4747;
-    /* background-color: #ffb8b8; */
-    /* box-shadow: 0px 0px .5vh .5vh #ff5d5d; */
+
     border-radius: 50%;
     width: 4%;
     aspect-ratio: 1/1;
 }
 
-/* .boss_led:hover {
-    background-color: #ff0000;
-} */
-
 .boss_knobs {
     height: 35%;
     aspect-ratio: 27.5/17.5;
-
     position: relative;
 }
 
@@ -142,17 +134,18 @@
 }
 
 .boss_knob.text {
-    top:70%;
+    top: 70%;
     text-align: center;
-    font-size: 2vh;
     height: 50%;
     aspect-ratio: 1/1;
     position: absolute;
+
 }
 
 .boss_knob.text.left {
     left: 10%;
 }
+
 .boss_knob.text.right {
     right: 10%;
 }
@@ -174,49 +167,35 @@
     transform: rotate(300deg);
 }
 
-
-
-
-.boss_name {
+.boss_text {
     position: absolute;
-    top: 17.5vh;
-    height: 15vh;
-    width: 29vh;
-    left: calc(1.5vh / -2);
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
 
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "boss_output . boss_input"
-        "boss_song boss_song boss_song"
-        "boss_artist boss_artist boss_artist";
-
-    font-size: 2vh;
-    font-weight: 500;
+    display: flex;
 }
 
 .boss_input {
-
-    grid-area: boss_input;
+    font-weight: 600;
     position: absolute;
-    top: 1vh;
-    height: 3vh;
-    right: 1vh;
-    /* outline: black 1px solid; */
+    top: 5%;
+    height: 20%;
+    width: 40%;
+    right: 2%;
     text-align: right;
 }
 
 .boss_output {
-    grid-area: boss_output;
-    left: 1vh;
+    font-weight: 600;
     position: absolute;
-    top: 1vh;
-    height: 3vh;
-    /* outline: black 1px solid; */
+    top: 5%;
+    height: 20%;
+    width: 40%;
+    left: 2%;
     text-align: left;
+
 }
 
 @font-face {
@@ -227,30 +206,90 @@
 
 .boss_song {
     grid-area: boss_song;
-    /*  border: black 1px solid; */
-    text-align: left;
-    font-size: 4vh;
-    line-height: 3vh;
+
     position: absolute;
-    top: -1vh;
-    left: 2vh;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+
+    text-align: left;
     font-family: BossFont;
+    line-height: 100%;
+    font-size: 150%;
+}
+
+.boss_song.big {
+    font-size: 200%;
+}
+
+.boss_song.medium {
+    font-size: 170%;
+}
+
+.boss_song.small {
+    font-size: 150%;
 }
 
 .boss_artist {
-    grid-area: boss_artist;
-    /*  border: black 1px solid; */
     position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 90%;
+    height: 25%;
+
     text-align: right;
-    right: 2vh;
     font-family: BossFont;
 }
 
-/* .boss_shadow
-{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.059);
-    width: 100%;
-    height: 100%;
-    border-radius:1vh;
-} */
+.boss_enclosure.blue {
+    background-color: rgb(113, 221, 245);
+}
+
+.boss_press.blue {
+    background-color: rgb(120, 230, 255);
+}
+
+.boss_enclosure.green {
+    background-color: rgb(108, 241, 63);
+    ;
+}
+
+.boss_press.green {
+    background-color: rgb(115, 255, 68);
+    ;
+}
+
+.boss_enclosure.red {
+    background-color: rgb(244, 57, 0);
+}
+
+.boss_press.red {
+    background-color: rgb(255, 60, 0);
+    color: white;
+}
+
+.boss_enclosure.red a {
+    color: white;
+}
+
+.boss_enclosure.yellow {
+    background-color: rgb(243, 243, 95);
+}
+
+.boss_press.yellow {
+    background-color: rgb(255, 255, 100);
+}
+
+.boss_enclosure.black {
+    background-color: rgb(27, 27, 27);
+}
+
+.boss_press.black {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.boss_enclosure.black a {
+    color: white;
+}
