@@ -1,13 +1,4 @@
-.gallery_dots {
-    text-align: center;
-    color: lightgrey;
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
-}
-
-.guitar_gallery,
-.art_gallery {
+.image_gallery{
     display: flex;
     overflow: scroll;
 
@@ -22,8 +13,7 @@
     /*     outline: solid black 1px; */
 }
 
-.guitar_gallery_item,
-.art_gallery_item {
+.image_gallery_item{
     flex-shrink: 0;
     
     scroll-snap-align: center;
@@ -35,37 +25,7 @@
 }
 
 
-
-.guitar_gallery img {
-    border-radius: .5vw;
-}
-
-@media (min-width: 1024px) {
-    .guitar_gallery_item {
-        width: calc(100%/4 - 2vw*(3/4));
-        aspect-ratio: 3 /4;
-    }
-}
-
-@media (max-width: 1024px) {
-    .guitar_gallery_item {
-        width: calc(100%/3 - 2vw*(2/3));
-        aspect-ratio: 3 /4;
-    }
-}
-
-@media (max-width: 768px) {
-    .guitar_gallery_item {
-        width: calc(100%/2 - 2vw*(1/2));
-        aspect-ratio: 3 /4;
-    }
-}
-
-.art_gallery {}
-
-.art_gallery_item {}
-
-.art_gallery img {
+.image_gallery img {
     width: auto;
     object-fit: cover;
     background-color: rgb(235, 235, 235);
@@ -73,42 +33,19 @@
 }
 
 @media (min-width: 1024px) {
-    .art_gallery img {
+    .image_gallery img {
         height: 50vh;
     }
 }
 
 @media (max-width: 1024px) {
-    .art_gallery img {
+    .image_gallery img {
         height: 45vh;
     }
 }
 
 @media (max-width: 768px) {
-    .art_gallery img {
+    .image_gallery img {
         height: 31vh;
     }
-}
-
-
-
-
-
-/* 
-.video_gallery video {
-    width: 44vw;
-    border-radius: 10px;
-    background-color:rgb(246, 246, 246);
-}
-
-@media (min-width: 1400px) {
-    .video_gallery video {
-        width: 28.8vw;
-    }
-}
-
-@media (max-width: 768px) {
-    .video_gallery video {
-        width: 90vw;
-    }
-} */
+} 

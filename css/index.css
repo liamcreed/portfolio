@@ -16,12 +16,6 @@ body {
   
 }
 
-@font-face {
-    font-family: OrangeAmp;
-    src: url(../resources/fonts/Orange/AmpedOrange.ttf);
-}
-
-
 .container {
     position: fixed;
     top: calc(130px + 1px);

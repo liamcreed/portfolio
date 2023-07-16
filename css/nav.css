@@ -7,7 +7,6 @@ header {
     height: 130px;
     background-color: white
 }
-
 nav {
     height: 100%;
     margin: 0 auto;
@@ -140,4 +139,18 @@ nav {
 .black_border {
     height: 2.5%;
     background-color: black;
+}
+
+@media (max-height: 350px) {
+    header {
+        height: 20vh;
+    }
+    .container
+    {
+        top: 20vh;
+    }
+    .nav_item.menu a
+    {
+        font-size:4vh;
+    }
 }
