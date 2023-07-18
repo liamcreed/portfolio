@@ -37,7 +37,6 @@ nav {
     text-decoration: none;
     font-size: 18px;
     color: rgb(255, 253, 253);
-    transition: all 200ms ease;
 }
 
 @media (max-width: 768px) {
@@ -91,7 +90,7 @@ nav {
 }
 
 .nav_item.knob.light img {
-    transition-duration: 500ms;
+    transition: all 500ms;
     opacity: 0;
 }
 
