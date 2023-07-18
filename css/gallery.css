@@ -45,3 +45,22 @@
         height: 31vh;
     }
 } 
+
+
+@media (min-width: 1024px) {
+    .image_gallery.small img {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .image_gallery.small img {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .image_gallery.small img {
+        height: 25vh;
+    }
+} 
