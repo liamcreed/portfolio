@@ -1,6 +1,6 @@
 #contact {
-    padding-top: 1vh;
     text-align: center;
+
 }
 
 #contact p {
@@ -16,20 +16,23 @@
 
 .plectrum_container
 {
-    /* outline: black 1px solid; */
-    aspect-ratio: 1/1;
-    max-height: 15vh;
-    aspect-ratio: 1 / 1;
-    position: relative;
-}
+    max-height:15vh;
 
-.plectrum_container  { 
+    aspect-ratio: 1/1;
+    position: relative;
+    
     transition: transform 800ms;
 }
 
 .plectrum_container:hover {
     transform: scale(1.05);
 }
+.plectrum_container a
+{
+    width: 100%;
+    height: 100%;
+}
+
 .plectrum 
 {
     height: 100%;
@@ -37,8 +40,8 @@
 }
 .plectrum img
 {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 .plectrum_social
 {
