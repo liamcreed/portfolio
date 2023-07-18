@@ -39,6 +39,12 @@ nav {
     color: rgb(255, 253, 253);
     transition: all 200ms ease;
 }
+
+@media (max-width: 768px) {
+    .nav_item.menu a  {
+        font-size: 16px;
+    }
+} 
 .nav_item.menu a:hover {
     color: rgb(255, 100, 20);
 }
