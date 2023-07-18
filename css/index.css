@@ -80,15 +80,13 @@ body {
     padding-top: 1px;
 }
 
-#cv a,
-#references a {
+.container a{
     transition: all 200ms ease;
     text-decoration: none;
     color: rgb(255, 103, 21);
 }
 
-#cv a:hover,
-#references a:hover {
+.container a:hover {
     color: rgb(75, 111, 203);
 }
 
@@ -97,7 +95,10 @@ body {
 }
 
 
-#cv span,
+#cv span
+{
+    font-weight: 200;
+}
 #references span {
     font-style: italic;
     font-weight: 200;
