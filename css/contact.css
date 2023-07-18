@@ -18,8 +18,6 @@
 {
     /* outline: black 1px solid; */
     aspect-ratio: 1/1;
-
-
     max-height: 15vh;
     aspect-ratio: 1 / 1;
     position: relative;
@@ -54,4 +52,26 @@
 {
     height: 100%;
     width: 100%;
+}
+
+
+.links
+{
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    width: 70%;
+}
+@media (max-width: 768px) {
+    .links {
+        width: 100%;
+    }
+}
+.links a
+{
+}
+
+.link
+{
+    width: 25%;
 }
