@@ -37,8 +37,7 @@ nav {
     text-decoration: none;
     font-size: 18px;
     color: rgb(255, 253, 253);
-    transition-duration: 200ms;
-
+    transition: all 200ms ease;
 }
 .nav_item.menu a:hover {
     color: rgb(255, 100, 20);
