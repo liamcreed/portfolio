@@ -5,16 +5,14 @@
     scroll-snap-type: x mandatory;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    
 }
 
 .boss_pedal {
 
     position: relative;
-
-    font-size: 1.8vh;
     height: 45vh;
-    width: auto;
-
+    font-size: 1.8vh;
     aspect-ratio: 32 / 50;
 
     flex-shrink: 0;
