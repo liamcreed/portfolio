@@ -58,6 +58,8 @@ body {
 .container h2 {
     text-align: center;
     font-size: 36px;
+    margin: 0;
+    padding:  2vh;
 }
 
 .container hr {
@@ -65,8 +67,6 @@ body {
     height: 3px;
     border: 0;
     border-radius: 2px;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
     
 }
 
