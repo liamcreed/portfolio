@@ -27,10 +27,10 @@
     .container hr {
         background-color: rgb(255, 240, 254);
         height: 1vh;
-        
+
     }
-    .container
-    {
+
+    .container {
         top: 12vh;
     }
 
@@ -41,14 +41,42 @@
         margin: 0;
     }
 
+    @media (max-width: 768px) {
+        h1{
+            font-size: 3vh;
+            padding-top:5vh;
+        }
+    }
+
     h2 {
         background-color: rgb(255, 240, 254);
         border-radius: 1vh;
         color: rgba(156, 0, 138, 0.372);
     }
+    /* @media (max-width: 768px) {
+        h2{
+            font-size: 10vh;
+        }
+    }
+ */
+
+    h3 {
+        text-align: center;
+        background-color: rgb(255, 240, 254);
+        border-radius: 1vh;
+        color: rgba(156, 0, 138, 0.372);
+        padding: 0;
+        margin-top: 1vh;
+        font-size: 2vh;
+    }
+
+    .image_gallery {
+        scroll-snap-type: y mandatory;
+    }
 
     .image_gallery_item img {
         background-color: blue;
+        scroll-snap-align: center;
     }
 
     a {
@@ -68,6 +96,7 @@
     <div class="container">
         <div>
             <h2>Waterverf, Potlood en Fineliner</h2>
+
             <div class="image_gallery small">
                 <img class="image_gallery_item" src="../resources/portfolio/art/watercolor/red_panda.jpg">
                 <img class="image_gallery_item" src="../resources/portfolio/art/watercolor/flamingo.jpg">
@@ -99,9 +128,9 @@
                 <img class="image_gallery_item" src="../resources/portfolio/art/3D/eowyn helmet textured.png">
                 <img class="image_gallery_item" src="../resources/portfolio/art/3D/Rhun helmet.png">
                 <img class="image_gallery_item" src="../resources/portfolio/art/3D/yarael poof(1).png">
-                <img class="image_gallery_item" src="../resources/portfolio/art/3D/sexy monke.png">
+<!--                 <img class="image_gallery_item" src="../resources/portfolio/art/3D/sexy monke.png"> -->
                 <img class="image_gallery_item" src="../resources/portfolio/art/3D/kiwi clay.png">
-                <img class="image_gallery_item" src="../resources/portfolio/art/3D/woman sculpt.png">
+ <!--                <img class="image_gallery_item" src="../resources/portfolio/art/3D/woman sculpt.png"> -->
                 <img class="image_gallery_item" src="../resources/portfolio/art/3D/dino.png">
             </div>
         </div>
