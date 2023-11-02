@@ -14,7 +14,7 @@ nav {
 }
 
 .nav_group {
-    width: calc(100%/5);
+    width: calc(100%/4);
     height: 100%;
     position: relative;
 }
