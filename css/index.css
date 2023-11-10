@@ -4,7 +4,6 @@ html {
 
 
     background-color: rgb(255, 255, 255);
-
 }
 
 
@@ -39,26 +38,26 @@ body {
 
 @media (min-width: 1024px) {
     .container {
-        font-size: 20px;
+        font-size: 1.1em;
     }
 }
 
 @media (max-width: 1024px) {
     .container {
-        font-size: 18px;
+        font-size: 1.1em;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
 
 .container h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2em;
     margin: 0;
     padding:  2vh;
 }
