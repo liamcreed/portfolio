@@ -1,4 +1,8 @@
-.image_gallery{
+:root{
+    --border_radius: 5px;
+}
+
+.gallery{
     display: flex;
     overflow: scroll;
 
@@ -11,7 +15,7 @@
     height: auto;
 }
 
-.image_gallery_item{
+.gallery_item{
     flex-shrink: 0;
     
     scroll-snap-align: center;
@@ -21,46 +25,46 @@
 }
 
 
-.image_gallery img {
+.gallery img {
     width: auto;
     object-fit: cover;
     background-color: rgb(235, 235, 235);
-    border-radius: 1vh;
+    border-radius: var(--border_radius);
 }
 
 @media (min-width: 1024px) {
-    .image_gallery img {
+    .gallery img {
         height: 50vh;
     }
 }
 
 @media (max-width: 1024px) {
-    .image_gallery img {
+    .gallery img {
         height: 45vh;
     }
 }
 
 @media (max-width: 768px) {
-    .image_gallery img {
+    .gallery img {
         height: 31vh;
     }
 } 
 
 
 @media (min-width: 1024px) {
-    .image_gallery.small img {
+    .gallery.small img {
         height: 35vh;
     }
 }
 
 @media (max-width: 1024px) {
-    .image_gallery.small img {
+    .gallery.small img {
         height: 35vh;
     }
 }
 
 @media (max-width: 768px) {
-    .image_gallery.small img {
+    .gallery.small img {
         height: 31vh;
     }
 } 

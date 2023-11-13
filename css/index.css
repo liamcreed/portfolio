@@ -1,7 +1,8 @@
-:root{
-    --orange_color:  rgb(255, 103, 21);
+:root {
+    --orange_color: rgb(255, 100, 20);
+    /* cornflowerblue */
 }
- 
+
 
 html {
     scroll-behavior: smooth;
@@ -20,6 +21,18 @@ body {
 
 }
 
+span,
+cite {
+    font-weight: 200;
+}
+
+blockquote {
+    font-weight: 200;
+    margin-top: -0.5em;
+}
+
+
+
 
 .container {
     position: fixed;
@@ -28,10 +41,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-
-    padding-left: 10%;
-    padding-right: 10%;
-    /* padding-bottom: 5vh; */
 
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -43,18 +52,24 @@ body {
 @media (min-width: 1024px) {
     .container {
         font-size: 1.1em;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
 
 @media (max-width: 1024px) {
     .container {
         font-size: 1.1em;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
 @media (max-width: 768px) {
     .container {
         font-size: 1em;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -63,15 +78,15 @@ body {
     text-align: center;
     font-size: 2em;
     margin: 0;
-    padding:  2vh;
+    padding: 0.25em;
 }
 
 .container hr {
     background-color: var(--orange_color);
-    height: 3px;
+    height: 2px;
     border: 0;
     border-radius: 2px;
-    
+
 }
 
 #cv,
@@ -97,20 +112,8 @@ body {
     line-height: 1.5em;
 }
 
-b{
-    font-weight: 400;
-}
-span,cite{
-    font-weight: 200;
-}
-i {
-   
-}
-
 #videos {}
 
 #photos {}
 
 #art {}
-
-
